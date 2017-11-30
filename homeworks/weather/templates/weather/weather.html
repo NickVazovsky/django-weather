@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'weather/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>Погода в Москве</h1>
+    <div class="container">
+
+        <div class="first_day">
+             <h3>Четверг</h3>
+            {% for weath in weathers %}
+
+                <p>{{ weath }}</p>
+             {% endfor %}
+        </div>
+        <div class="second_day">
+            <h3>Пятница</h3>
+             {% for weath in weathers2 %}
+
+                <p>{{ weath }}</p>
+             {% endfor %}
+        </div>
+        <div class="third_day">
+            <h3>Суббота</h3>
+           {% for weath in weathers3 %}
+
+                <p>{{ weath }}</p>
+             {% endfor %}
+        </div>
+        <div class="four_day">
+            <h3>Воскресенье</h3>
+            {% for weath in weathers4 %}
+
+                <p>{{ weath }}</p>
+             {% endfor %}
+        </div>
+        <div class="fifth_day">
+            <h3>Понедельник</h3>
+           {% for weath in weathers5 %}
+
+                <p>{{ weath }}</p>
+             {% endfor %}
+        </div>
+    </div>
+   </body>
+</html>
